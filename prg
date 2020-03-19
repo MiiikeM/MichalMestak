@@ -201,6 +201,7 @@ foreach ($ovoce as $key => $value);
   
    }
    phpinfo()
+ahoj
  ?>
         
         
