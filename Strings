@@ -1,0 +1,127 @@
+?php
+class stringMestak {
+    // substr - vypise nam kus retezce
+    static public function substrMestak($retz,$odkudseZac) {
+        return substr($retz, $odkudseZac);
+}
+// vlozi v retezci na prislusne misto string
+static public function substr__replaceMestak($tx,$no,$now) {
+   return substr_replace($tx, $no, $now);
+}
+//nahradi  v retezci slovo
+static public function strtrMestak($veta,$coe,$www) {
+    return strtr($veta, $coe, $www);
+}
+//vsechny pismena v rezezci budou velka
+static public function strtoupperMestak($big) {
+    return strtoupper($big);
+}
+//vsechny budou malym pismenem
+static public function strtolowerMestak(small) {
+    return strtolower(small);
+}
+//v retezci najde pozadovany retez posledni moznost
+static public function strrposMestak($od,$co) {
+    return strrpos($od, $co);
+}
+//vyhleda presne zadany string v retezci
+static public function strriposMestak($od,$pluchodneH) {
+   return strripos($od, $pluchodneH); 
+}
+//najde v retezci prvni shodu toho co hledam
+static public function strposMestak($od,$co) {
+    return strpos($od, $co);
+}
+//vypise retezcovou delku
+static public function strlenMestak($legit) {
+    return strlen($legit);
+}
+//najdu co hledam
+static public function strchrMestak($od,$co) {
+    return strchr($od, $co);
+}
+// vyjme/nahradi promenne v poli
+static public function str_replace($jako,$nekde,$tam) {
+   return str_replace($jako, $nekde, $tady);
+}
+// zasifruje nam slovo
+static public function md5Mestak($shh) {
+    return md5($shh);
+}
+//do pole nam neco vlozi
+static public function implodeMestak($wh,$aimbot ){
+    return implode($wh, $aimbot);
+}
+//plucdeli to na substringy
+static public function explodeMestak($run,$runw) {
+    return explode($run, $runw);
+}
+//prida slash pred ty charaktery
+static public function addcslashesMestak($plus,$pluc) {
+    return addcslashes($plus, $pluc);
+}
+//vlozi do vety backslash
+static public function addslashMestak($runw) {
+    return addslashes($runw);
+}
+// odebere nevhodne vety z retezce
+static public function trimMestak($rage,$stop) {
+    return trim($rage, $stop);
+}
+//prvni pismeno ve vete bude velke
+static public function ucfirstMestak($veta) {
+    return ucfirst($veta);
+}
+//vsechny slova budou napsana velkym pismenem
+static public function ucwordsMestak($veta) {
+    return ucwords($veta);
+}
+
+}//definice new proměnných
+$retz = "aaaaaaaaha";
+$odkudseZac =98;
+$tx="nevim nic";
+$no="kde";
+$now= 56;
+$veta="tohle mam rad";
+$coe ="bmw";
+$www="audi";
+$vsechnoV="chuze je zdrava";
+small="ferrari";
+$od ="wv";
+$co= "proc";
+$pluchodneH="sadge";
+$legit= "bez emoci";
+$jako= array ('d','g','z','b','i,'q');
+$nekde="tady nee";
+$tady="dnes ano";
+$shh= "co";
+$wh=",";
+$aimbot= array ('audi','bmw','lancia','ford');
+$run = '""';
+$runw="dva jedna osm";
+$plus="zdravim vas";
+$pluc= 'A-z';
+$rage="\a\jsem nej\a\a";
+$stop="\a";
+
+//vypíše funkci pomoci var_dump nadefinovane ve tride
+var_dump(stringMestak::substrMestak($retez, $odkudseZ));
+var_dump(stringMestak::substr__replaceMestak($tx, $no, $now));
+var_dump(stringMestak::strtrMestak($string, $coe, $www));
+var_dump(stringMestak::strtoupperMestak($big));
+var_dump(stringMestak::strtolowerMestak(small));
+var_dump(stringMestak::strrposMestak($od, $co));
+var_dump(stringMestak::strriposMestak($od, $pluchodneH));
+var_dump(stringMestak::strposMestak($od, $co));
+var_dump(stringMestak::strlenMestak($legit));
+var_dump(stringMestak::strchrMestak($od, $co));
+var_dump(stringMestak::str_replace($jako, $nekde, $tady));
+var_dump(stringMestak::md5Mestak($shh));
+var_dump(stringMestak::implodeMestak($wh, $aimbot));
+var_dump(stringMestak::explodeMestak($run, $runw));
+var_dump(stringMestak::addcslashesMestak($plus, $pluc));
+var_dump(stringMestak::addslashMestak($runw));
+var_dump(stringMestak::trimMestak($rage, $stop));
+var_dump(stringMestak::ucfirstMestak($veta));
+var_dump(stringMestak::ucwordsMestak($veta));
