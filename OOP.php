@@ -22,8 +22,8 @@ class  ustredna_Mestak_Michal extends ustredny_Mestak_Michal{
    //nastaveni konstanty type
    const TYPE ="5";
 }
-//class iustredna dedi interface od abs class ustredny
-interface iustredna_Mestak_Michal extends ustredny_Mestak_Michal{
+//class ustredna dedi interface od abs class ustredny
+interface ustredna_Mestak_Michal extends ustredny_Mestak_Michal{
     //vypise nastavene hodnoty
     public function _contruct ($Napeti_Mestak_Michal);
 }
