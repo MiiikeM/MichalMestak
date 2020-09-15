@@ -1,46 +1,34 @@
-
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-<?php
-
-// abstraktni trida ustredny_Mestak_Michal s protected $napetí
+//abstraktní trida ustredny a v ni protected $napetí
 abstract class  ustredny_Mestak_Michal{
-
+    
     protected $napeti_Mestak_Michal;
-    //nastavení napeti
-    public function setNapeti_Mestak_Michal($napeti_Mestak_Michal){
+    /**
+     * paramert muze byt jen float
+     * kontrola taky jen float
+     * pri cteni to samé
+ */
+    public function setNapeti_Mestak_Michal(float $napeti_Mestak_Michal) : float{
         $this->napeti_Mestak_Michal = $napeti_Mestak_Michal;
     }
-
-    //precte napeti_Mestak_Michal
-    public function getNapeti_Mestak_Michal() : {
-        return $this-> Napeti_Mestak_Michal;
+    //precteni napeti
+    public function getNapeti_Mestak_Michal() : float {
+        return $this-> napeti_Mestak_Michal;
     }
 }
-
-// class ustredna se dedi do abstraktni class ustredny
+// class ustredna se dedi do abs. class ustredny
 class  ustredna_Mestak_Michal extends ustredny_Mestak_Michal{
-  public $Napeti_Mestak_Michal= 8;
-   //nastaveni konstanty TYPY
-   const TYPE ="4";
+   public $Napeti_Mestak_Michal= 12;
+   //nastaveni konstanty type
+   const TYPE ="5";
 }
-
-// class i ustredna dedi interface od abst. class ustredny
+//class iustredna dedi interface od abs class ustredny
 interface iustredna_Mestak_Michal extends ustredny_Mestak_Michal{
     //vypise nastavene hodnoty
     public function _contruct ($Napeti_Mestak_Michal);
 }
 
-
-// pres vardummp se vypise hodnota v type a hodnotu napeti na ustredne
- var_dump (ustredna_Mestak_Michal:TYPE);
- var_dump ($Napeti_Mestak_Michal);
- //výpis hodnoty TYPE a $napeti_Mestak_Michal přes var_dump 
-
- <?
+//pres vardummp napise hodnotu v type a hodnotu napeti v ustredne
+ var_dump (ustredna_Mestak_Michal::TYPE);
+ var_dump (ustredna_Mestak_Michal::Napeti_Mestak_Michal);
+?> 
