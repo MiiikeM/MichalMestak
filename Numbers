@@ -1,0 +1,106 @@
+<?php
+class numbersMestak{
+    static public function roundMestak($rnded) {
+        return round($rnded);
+        
+    }
+   static public function ceilMestak($rndedN) {
+       return ceil($rndedN);
+   }
+   static public function floorMestak($rndedD) {
+       return floor($rndedD);
+   }
+   static public function sqrtMestak($druhaOdmocnina) {
+       return sqrt($druhaOdmocnina);
+   }
+   static public function powMestak($Mocnina,$Mocnitel) {
+       return pow($Mocnina, $Mocnitel);
+   }
+   static public function sinMestak($angle) {
+       return sin($angle);
+   }
+   static public function cosMestak($angle) {
+       return cos($angle);
+}
+static public function tanMestak($angle) {
+       return tan($angle);
+}
+static public function asinMestak($fromNumtoAng) {
+       return asin($fromNumtoAng);
+   }
+   static public function acosMestak($fromNumtoAng) {
+       return acos($fromNumtoAng);
+}
+static public function atanMestak($fromNumtoAng) {
+       return atan($fromNumtoAng);
+}
+static public function fmodMestak($basic,$del) {
+    return fmod($basic, $del);
+}
+static public function maxMestak($pole) {
+    return max($pole);
+}
+static public function minMestak($pole) {
+    return min($pole);
+}
+static public function absMestak($absCislo) {
+    return abs($absCislo);
+}
+static public function odecitaniMestak($a,$b) {
+    return $a-$b;
+}
+static public function scitaniMestak($a,$b) {
+    return $a+$b;
+}
+static public function deleniMestak($a,$b) {
+    return $a/$b;
+}
+static public function nasobeniMestak($a,$b) {
+    return $a*$b;
+}
+static public function number_formatMestak($formaty) {
+    return number_format($formaty);
+}
+}
+$rnded = 4.22;
+$rndedN = 11.66;
+$rndedD = 2.69;
+$druhaOdmocnina = 100;
+$Mocnina = 10;
+$Mocnitel = 2;
+$uhlos = 360;
+$fromNumtoAng = 90;
+$basic = 69;
+$del = 15;
+$pole = array ('100','420','600','888','1001','1202','1604','2540','6490');
+$absCislo = 2.13;
+$a = 30;
+$b = 15;
+$formaty = 9;
+var_dump(numbersMestak::roundMestak($rnded)); 
+var_dump(numbersMestak::ceilMestak($rndedN));
+var_dump(numbersMestak::floorMestak($rndedD));
+var_dump(numbersMestak::sqrtMestak($druhaOdmocnina));
+var_dump(numbersMestak::powMestak($Mocnina, $Mocnitel));
+var_dump(numbersMestak::sinMestak($uhlos));
+var_dump(numbersMestak::cosMestak($uhlos));
+var_dump(numbersMestak::tanMestak($uhlos));
+var_dump(numbersMestak::asinMestak($fromNumtoAng));
+var_dump(numbersMestak::acosMestak($fromNumtoAng));
+var_dump(numbersMestak::atanMestak($fromNumtoAng));
+var_dump(numbersMestak::fmodMestak($basic, $del));
+var_dump(numbersMestak::maxMestak($pole));
+var_dump(numbersMestak::minMestak($pole));
+var_dump(numbersMestak::absMestak($absCislo));
+var_dump(numbersMestak::odecitaniMestak($a, $b));
+var_dump(numbersMestak::scitaniMestak($a, $b));
+var_dump(numbersMestak::deleniMestak($a, $b));
+var_dump(numbersMestak::nasobeniMestak($a, $b));
+var_dump(numbersMestak::number_formatMestak($formaty));
+
+
+/* 
+ * @autor Michal Mestak
+ */
+
+?>
